@@ -19,6 +19,7 @@ stages:
 # =========================
 - stage: Staging
   displayName: Deploy to Staging
+  # condition: eq(variables['Build.SourceBranchName'], 'Staging')
   condition: eq(variables['Build.SourceBranchName'], 'Staging')
 
   jobs:
